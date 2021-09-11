@@ -1,0 +1,69 @@
+{
+   "air permit":{
+      "impactFacilityId":{
+         "columnName":"Impact Facility Id",
+         "columnType":"navigate",
+         "sortable":true
+      },
+      "bpapcApiNo":{
+         "columnName":"BPAPC Api No",
+         "columnType":"string",
+         "sortable":false
+      },
+      "formerCompanyFacilityName":{
+         "columnName":"Former Company Facility Name",
+         "columnType":"string",
+         "sortable":true
+      },
+      "airQualityPermits":{
+         "columnName":"Air Quality Permit(s)",
+         "columnType":"string",
+         "sortable":false
+      },
+      "dateOfOwnershipChange":{
+         "columnName":"Date of Ownership Change",
+         "columnType":"date",
+         "sortable":true
+      },
+      "qtr1":{
+         "columnName":"Qtr1",
+         "columnType":"string",
+         "sortable":false
+      },
+      "qtr2":{
+         "columnName":"Qtr2",
+         "columnType":"string",
+         "sortable":false
+      },
+      "township":{
+         "columnName":"Township",
+         "columnType":"string",
+         "sortable":false
+      },
+      "range":{
+         "columnName":"Range",
+         "columnType":"string",
+         "sortable":false
+      },
+      "latitude":{
+         "columnName":"Latitude",
+         "columnType":"float",
+         "sortable":false
+      },
+      "longitude":{
+         "columnName":"Longitude",
+         "columnType":"float",
+         "sortable":false
+      },
+      "facilityType":{
+         "columnName":"Facility Type",
+         "columnType":"string",
+         "sortable":true
+      },
+      "county":{
+         "columnName":"County",
+         "columnType":"string",
+         "sortable":true
+      }
+   }
+}

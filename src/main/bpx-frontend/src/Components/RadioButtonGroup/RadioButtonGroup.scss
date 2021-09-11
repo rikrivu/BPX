@@ -1,0 +1,55 @@
+.radio-btn-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+
+    > div {
+        display: flex;
+        align-items: center;
+        // margin-right: 15px;
+        padding: 0 8px 2px 8px;
+        border-radius: 5px;
+
+        .radio-input {
+            margin: 10px 20px 10px 0;
+    
+            &::after {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                top: -2px;
+                left: -1px;
+                position: relative;
+                background-color: var(--color-white);
+                content: '';
+                display: inline-block;
+                visibility: visible;
+                border: 2px solid var(--color-grey);
+            }
+    
+            &:checked::after {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                top: -2px;
+                left: -1px;
+                position: relative;
+                background-color: var(--color-white);
+                content: '';
+                display: inline-block;
+                visibility: visible;
+                border: 7px solid var(--color-pink);
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &:hover {
+            background: var(--color-hover-grey);
+        }
+    }
+}

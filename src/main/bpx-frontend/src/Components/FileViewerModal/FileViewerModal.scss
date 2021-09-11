@@ -1,0 +1,34 @@
+.file-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px var(--color-shadow-black);
+
+    .pdf-link {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        transition: all 0.5s ease;
+
+        img {
+            height: 25px;
+        }
+
+        > a {
+            padding-left: 15px;
+            text-decoration: none;
+            color: var(--color-light-black)
+        }
+
+        &:hover, &:focus {
+            background: var(--color-light-grey);
+
+            > a {
+                color: var(--color-link-blue);
+            }
+        }
+    }
+}

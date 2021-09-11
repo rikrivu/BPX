@@ -1,0 +1,47 @@
+.excel-viewer-container {
+    padding: 30px;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+        width: 175px;
+    }
+
+    th {
+        padding: 20px;
+    }
+
+    thead {
+        background-color: #f8f8f8;
+    }
+
+    tbody {
+        tr:nth-of-type(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background: var(--color-aqua-light);
+        }
+    }
+}
+
+.download-btn {
+    background: none;
+    border: none;
+    color: var(--color-link-blue);
+    transition: all 0.5s ease;
+
+    &:hover, &:focus {
+        outline: none;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

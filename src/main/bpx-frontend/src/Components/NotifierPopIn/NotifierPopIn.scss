@@ -1,0 +1,65 @@
+.notifier-container {
+    position: fixed;
+    top: 150px;
+    right: -300px;
+    border-radius: 5px;
+    z-index: 5;
+    background: var(--color-white);
+    font-weight: bold;
+    padding: 10px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+
+    > svg {
+        margin-right: 5px;
+    }
+}
+
+.notify-success {
+    border-bottom: 5px solid var(--color-green);
+    box-shadow: 4px 3px 7px 0px var(--color-shadow-green);
+    color: var(--color-green);
+}
+
+.notify-fail {
+    border-bottom: 5px solid var(--color-red);
+    box-shadow: 4px 3px 7px 0px var(--color-shadow-red);
+    color: var(--color-red);
+}
+
+.notifier-start {
+    right: -300px;
+    opacity: 0;
+}
+
+.notifier-end {
+    right: 20px;
+    opacity: 1;
+}
+
+.slideIn {
+  animation: slideIn 1s forwards;
+  -webkit-animation: slideIn 1s forwards;
+}
+
+.slideOut {
+    animation: slideOut 1s forwards;
+    -webkit-animation: slideOut 1s forwards;
+}
+
+@keyframes slideIn {
+  100% { 
+      right: 20px;
+      opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+  100% {
+        right: -300px;
+        opacity: 0;
+    }
+
+}
+

@@ -1,0 +1,30 @@
+.header-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    white-space: normal;
+    font-size: inherit;
+    font-weight: bold;
+
+    &:hover, &:focus {
+        outline: none;
+        cursor: pointer;
+        
+        .sort-icons {
+            color: var(--color-link-blue);
+        }
+    }
+
+    .sort-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--color-light-grey);
+        margin-left: 5px;
+
+        .sortIcon {
+            font-size: 18px;
+        }
+    }
+}

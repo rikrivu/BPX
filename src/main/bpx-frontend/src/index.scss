@@ -1,0 +1,213 @@
+@import "./themes/variables.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.alt-background {
+  background-color: var(--color-row-grey) !important;
+}
+
+// .ag-header {
+//   position: sticky !important;
+//   top: 10px !important;
+//   z-index: 1 !important;
+// }
+
+.ag-row-hover, .alt-background:hover {
+  /* putting in !important so it overrides the theme's styling as it hovers the row also */
+  background: var(--color-aqua-light) !important;
+}
+
+// .MuiDataGrid-window::-webkit-scrollbar
+.app-scroll::-webkit-scrollbar {
+  width: 10px; // For Vertical Scrolls
+  background-color: var(--color-hover-grey) !important;
+  height: 10px; // For Horizontal Scrolls
+  border-radius: 5px;
+}
+
+.app-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-light-grey) !important;
+  border: 2px solid transparent !important;
+  border-radius: 9px !important;
+  background-clip: content-box;
+}
+
+.app-scroll::-webkit-scrollbar-thumb:horizontal {
+  background-color: var(--color-light-grey) !important;
+  border-radius: 10px;
+}
+
+.app-scroll::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  width: 100%;
+  position: relative;
+
+  .table-title {
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .search-input {
+    margin: 0 0 20px 20px;
+    width: 30%;
+    position: relative;
+
+    > div {
+      width: 100%;
+    }
+    
+    > button {
+      position: absolute;
+      top: 45%;
+      right: 1%;
+      padding: 2px;
+      display: flex;
+      border-radius: 50%;
+
+      &:hover, &:focus {
+        background: var(--color-hover-grey);
+      }
+    }
+  }
+}
+
+.back-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  padding: 4px 5px;
+  color: var(--color-light-black);
+
+  > svg {
+    font-size: 50px;
+  }
+
+  &:hover, &:focus {
+    outline: none;
+    cursor: pointer;
+    background: var(--color-hover-grey);
+  }
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: var(--color-link-blue);
+  height: fit-content;
+
+  &:focus, &:hover {
+    outline: none;
+    cursor: pointer;
+    color: var(--color-link-hover-purple);
+  }
+}
+
+.no-truncate {
+  white-space: break-spaces;
+  width: 100%;
+  padding: 0;
+}
+
+.modal-open-link {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+  color: var(--color-link-blue);
+  height: fit-content;
+
+  &:hover, &:focus {
+    color: var(--color-link-hover-purple);
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--color-light-black);
+
+  > div {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+}
+
+.modal-body {
+  margin: 10px 10px 10px 20px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+    
+.modal-clear-button {
+  background: none;
+  border: none;
+  color: var(--color-deep-grey);
+  transition: all 0.5s ease;
+
+  > svg {
+    font-size: 20px;
+  }
+
+  &:hover, &:focus {
+    cursor: pointer;
+    outline: none;
+    color: var(--color-light-black);
+  }
+}
+
+.default-header {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.skeleton-header > .ag-react-container {
+  width: 100%;
+}
+
+.group-header > div {
+  justify-content: center;
+}
+
+.default-cell {
+  .ag-react-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      white-space: normal;
+      line-height: normal;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

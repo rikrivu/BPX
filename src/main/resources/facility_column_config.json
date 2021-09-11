@@ -1,0 +1,74 @@
+{
+   "air permit":{
+      "facilityId":{
+         "columnName":"Facility ID",
+         "columnType":"navigate",
+         "sortable":true
+      },
+      "facilityName":{
+         "columnName":"Facility Name",
+         "columnType":"string",
+         "sortable":true
+      },
+      "companyId":{
+         "columnName":"Company ID",
+         "columnType":"string",
+         "sortable":true
+      },
+      "companyName":{
+         "columnName":"Company Name",
+         "columnType":"string",
+         "sortable":true
+      },
+      "operating":{
+         "columnName":"Operating",
+         "columnType":"string",
+         "sortable":false
+      },
+      "facilityClass":{
+         "columnName":"Facility Class",
+         "columnType":"string",
+         "sortable":false
+      },
+      "facilityType":{
+         "columnName":"Facility type",
+         "columnType":"string",
+         "sortable":false
+      },
+      "county":{
+         "columnName":"County",
+         "columnType":"string",
+         "sortable":false
+      },
+      "latitude":{
+         "columnName":"Latitude",
+         "columnType":"string",
+         "sortable":false
+      },
+      "longitude":{
+         "columnName":"Longitude",
+         "columnType":"string",
+         "sortable":false
+      },
+      "application":{
+         "columnName":"Application",
+         "columnType":"string",
+         "sortable":false
+      },
+      "permit":{
+         "columnName":"Permit",
+         "columnType":"string",
+         "sortable":true
+      },
+      "multiple":{
+         "columnName":"Multiple",
+         "columnType":"string",
+         "sortable":false
+      },
+      "titleVPermit":{
+         "columnName":"Title V Permit",
+         "columnType":"string",
+         "sortable":false
+      }
+   }
+}

@@ -1,0 +1,81 @@
+{
+   "facilityId":{
+      "columnName":"Facility ID",
+      "columnType":"string",
+      "sortable":true
+   },
+   "permitNumber":{
+      "columnName":"Permit Number",
+      "columnType":"url",
+      "sortable":true
+   },
+   "legacyPermitNumber":{
+      "columnName":"Legacy Permit Number",
+      "columnType":"string",
+      "sortable":true
+   },
+   "applicationNumber":{
+      "columnName":"Application Number",
+      "columnType":"modal",
+      "sortable":true
+   },
+   "action":{
+      "columnName":"Action",
+      "columnType":"string",
+      "sortable":false
+   },
+   "reason":{
+      "columnName":"Reason",
+      "columnType":"string",
+      "sortable":false
+   },
+   "publicNotice":{
+      "columnName":"Public Notice",
+      "columnType":"group",
+      "sortable":false,
+      "children":{
+         "startDate":{
+            "columnName":"Start Date",
+            "columnType":"string",
+            "sortable":false
+         },
+         "endDate":{
+            "columnName":"End Date",
+            "columnType":"string",
+            "sortable":false
+         }
+      }
+   },
+   "final":{
+      "columnName":"Final",
+      "columnType":"group",
+      "sortable":false,
+      "children":{
+         "finalPermitWaiverDocument":{
+            "columnName":"Final Permit/Waiver Document",
+            "columnType":"string",
+            "sortable":false
+         },
+         "finalIssuanceDate":{
+            "columnName":"Final Issuance Date",
+            "columnType":"string",
+            "sortable":false
+         },
+         "expirationDate":{
+            "columnName":"Expiration Date",
+            "columnType":"string",
+            "sortable":false
+         }
+      }
+   },
+   "rescissionDate":{
+      "columnName":"Rescission Date",
+      "columnType":"string",
+      "sortable":false
+   },
+   "description":{
+      "columnName":"Description",
+      "columnType":"string",
+      "sortable":false
+   }
+}
